@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float distancia(float x1, float y1, float x2, float y2){
+    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+}
+
+int main()
+{
+    float x1, y1, x2, y2, x3, y3;
+
+    printf("Ponto A (x1 y1): ");
+    scanf("%f %f", &x1, &y1);
+
+    printf("Ponto B (x2 y2): ");
+    scanf("%f %f", &x2, &y2);
+
+    printf("Ponto C (x3 y3): ");
+    scanf("%f %f", &x3, &y3);
+
+    float ladoAB = distancia(x1, y1, x2, y2);
+    float ladoBC = distancia(x2, y2, x3, y3);
+    float ladoCA = distancia(x3, y3, x1, y1);
+
+    float perimetro = ladoAB + ladoBC + ladoCA;
+
+    printf("\nPerimetro: %.2f\n", perimetro);
+
+    return 0;
+}
