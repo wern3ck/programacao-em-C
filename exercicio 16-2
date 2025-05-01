@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a, b, soma, subtracao, divisao, resto, multiplicacao;
+
+    printf("valor de a: ");
+    scanf("%d",&a);
+
+    printf("valor b: ");
+    scanf("%d",&b);
+
+    soma = a + b;
+
+    printf("soma e igual: %d\n", soma);
+
+    subtracao = a -b;
+
+    printf("subtracao e igual: %d\n",subtracao);
+
+    multiplicacao = a * b;
+
+    printf("multiplicaco e igual a: %d\n", multiplicacao);
+
+    divisao = a / b;
+
+    printf("divisao e igual a : %d\n",divisao);
+
+    resto = a %  b;
+
+    printf("resto e igual a: %d",resto);
+
+    return 0;
+}
