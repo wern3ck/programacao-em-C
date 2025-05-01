@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int numero, dobro, triplo, quadrado;
+
+   printf("adicione um numero: ");
+   scanf("%d", &numero);
+
+   dobro = numero * 2;
+
+   printf("o dobro de %d e %d\n",numero, dobro);
+
+   triplo = numero * 3;
+
+   printf("o triplo de %d e %d\n",numero,triplo);
+
+   quadrado = numero * numero;
+
+   printf("o quadrado de %d e %d",numero, quadrado);
+
+    return 0;
+
+}
