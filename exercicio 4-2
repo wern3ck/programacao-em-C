@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define PI 3.14159
+#include <math.h>
+
+int main()
+{
+    float altura, raio, d, V;
+
+    printf("altura: ");
+    scanf("%f", &altura);
+
+    printf("diametro: ");
+    scanf("%f", &d);
+
+    raio = d / 2;
+
+    V = PI * raio * raio * altura;
+
+    printf("\nO volume e: %.2f", V);
+    return 0;
+}
+
