@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float F, C;
+
+    printf("\nescreva a tempetura em celsius: ");
+    scanf("%f", &C);
+
+    F = (9 * C + 160) / 5;
+
+    printf("a temperatura em fahreind e: %.2f", F);
+
+    return 0;
+}
