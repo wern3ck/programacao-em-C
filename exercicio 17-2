@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float massa, altura, IMC;
+
+    printf("\ndigite sua massa: ");
+    scanf("%f", &massa);
+
+    printf("\ndigite sua altura: ");
+    scanf("%f", &altura);
+
+    IMC = massa / (altura * altura);
+
+    printf("\nSeu IMC e: %.2f", IMC);
+
+
+
+    return 0;
+}
