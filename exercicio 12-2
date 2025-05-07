@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   float preco_original, desconto, preco_com_desconto,preco;
+
+   printf("\npreco original: ");
+   scanf("%f", &preco_original);
+
+   desconto = preco_original * 0.25;
+
+   preco_com_desconto = preco_original - desconto;
+
+   printf("\no preco com desconto e: %.2f", preco_com_desconto);
+    return 0;
+}
