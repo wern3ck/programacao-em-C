@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    int total_segundos = 200000;
+    int minutos, hora, dia, resto, segundos_restantes;
+
+    dia = total_segundos / 86400;
+    total_segundos = total_segundos % 86400;
+
+    hora = total_segundos / 3600;
+    total_segundos = total_segundos % 3600;
+
+    minutos = total_segundos / 60;
+    segundos_restantes = total_segundos % 60;
+
+    printf("segundos no dia e : %.2d\n", dia);
+    printf("segundos em hora e: %.2d\n", hora);
+    printf("segundos em minutos e: %.2d\n", minutos);
+    printf("Segundos: %d\n", segundos_restantes);
+
+
+   return 0;
+}
