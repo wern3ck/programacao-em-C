@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int hora, minutos, restante_segundos, segundos, total_segundos;
+
+    printf("escreva os segundos: ");
+    scanf("%d", &total_segundos);
+
+    hora = total_segundos / 3600;
+    total_segundos = total_segundos % 3600;
+
+
+    minutos = total_segundos / 60;
+    restante_segundos = total_segundos % 60;
+
+    printf("\na quantidade de horas: %.d\n", hora);
+    printf("\na quantidade de minutos: %.d\n", minutos);
+    printf("\nSegundos: %.d\n", restante_segundos);
+
+    return 0;
+}
