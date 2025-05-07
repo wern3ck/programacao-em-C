@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int salario_minimo;
+    float salario,  quantidade_de_salarios;
+
+    salario_minimo = 1518;
+
+    printf("salario funcionario: ");
+    scanf("%f", &salario);
+
+    quantidade_de_salarios = salario / salario_minimo;
+
+    printf("a quantidade e: %.2f",quantidade_de_salarios);
+    return 0;
+}
