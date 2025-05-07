@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   float soma, diferenca, x, y;
+
+   printf("escreva o valor da soma: ");
+   scanf("%f", &soma);
+
+   printf("\nescreva o valor da diferenca: ");
+   scanf("%f", &diferenca);
+
+   x = (soma + diferenca)/2.0;
+
+   y = (soma - diferenca)/2.0;
+
+   printf("\no valor de x e: %.2f",x);
+   printf("\no valor de y e : %.2f",y);
+
+
+    return 0;
+}
