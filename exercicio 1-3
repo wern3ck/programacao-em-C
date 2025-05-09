@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define pi 3.1415
+
+float calcule_area (float raio){
+    float area;
+    area = pi * raio* raio;
+    return area;
+}
+
+int main()
+{
+    float a;
+    float r;
+
+    printf("escreva o valor de a: ");
+    scanf("%f", &r);
+
+    a = calcule_area(r);
+
+    printf("\no area do circulo e: %.2f", a);
+    return 0;
+}
