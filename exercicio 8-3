@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    float a, b, distancia, x1, y1, x2, y2, z1, z2;
+
+    printf("\nescreva os valores de x1 e y1:  ");
+    scanf("%f %f", &x1, &y1);
+
+    printf("\nescreva os valores de x2 e y2:  ");
+    scanf("%f %f", &x2, &y2);
+
+    distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+    printf("\n a distancia e: %f",distancia);
+
+    return 0;
+}
