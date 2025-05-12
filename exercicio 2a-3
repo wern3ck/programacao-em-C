@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float calculo_notas(float nota1, float nota2)
+{
+    float media;
+    media = (nota1 + nota2) / 2;
+    return media;
+}
+
+
+int main()
+{
+    float resultado, nota1, nota2, media;
+
+    printf("\nescreva primeira nota: ");
+    scanf("%f",&nota1);
+
+    printf("\nescreva a segunda nota: ");
+    scanf("%f", &nota2);
+
+    resultado = calculo_notas(nota1, nota2);
+    printf("\no resultado da media e igual: %.2f", resultado);
+
+    return 0;
+}
+
