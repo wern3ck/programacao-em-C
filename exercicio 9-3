@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#define PI 3.14159
+
+float calcular_raio(float diametro){
+    float raio;
+    raio = diametro / 2;
+    return raio;
+}
+
+int main()
+{
+    int r;
+    float d1, a1, c1, a2, d2, c2, diametro1,diametro2, raio1, raio2;
+
+    printf("\nescreva o valor do diametro: ");
+    scanf("%f", &d1);
+    diametro1 = d1;
+    raio1 = calcular_raio(diametro1);
+    printf("\no diametro e igual a : %.2f\n", diametro1);
+
+    printf("\no raio e igual a : %.2f\n", raio1);
+
+    a1 = PI * raio1 * raio1;
+    printf("\o valor da area e: %.2f",a1);
+
+    c1 = 2 * PI * raio1;
+    printf("\no valor da circunferencia e: %.2f\n", c1);
+
+    printf("\n escreva o valor do diametro2: ");
+    scanf("%f",&d2);
+    diametro2 = d2;
+
+    raio2 = calcular_raio(diametro2);
+    printf("\no valor do diametro e: %.2f", diametro2);
+    printf("\no valor do raio e: %.2f", raio2);
+
+    a2 = PI * raio2 * raio2;
+    printf("\no valor do area2 e: %.2f",a2);
+
+    c2 = 2 * PI * raio2;
+    printf("\no valor do circunferencia2: %.2f",c2);
+    return 0;
+}
