@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float valor_atual, parcelas, valor_de_cada_parcela;
+
+    printf("\no valor da compra e: ");
+    scanf("%f", &valor_atual);
+
+    printf("\no numero de parcelas e: ");
+    scanf("%f", &parcelas);
+
+    valor_de_cada_parcela = valor_atual / parcelas;
+
+    printf("\no valor de cada parcela e: %.2f", valor_de_cada_parcela);
+    return 0;
+}
