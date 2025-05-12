@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float media_notas(float nota1, float nota2, float nota3){
+    float media;
+    media = (nota1 + nota2 + nota3) / 3;
+    return media;
+}
+
+
+int main()
+{
+    float n1, n2, n3, resultado;
+
+    printf("escreva tres notas:   ");
+    scanf("%f %f %f", &n1, &n2, &n3);
+
+    resultado = media_notas(n1, n2, n3);
+
+    printf("\noresultado e: %f", resultado);
+
+    return 0;
+}
