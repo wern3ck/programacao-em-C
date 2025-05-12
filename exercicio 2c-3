@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float dimensoes_retangulo(float lado1, float lado2){
+    float area;
+    area = lado1 * lado2;
+    return area;
+}
+int main()
+{
+    float l1;
+    float l2;
+    float area;
+
+    printf("escreva o lado1: ");
+    scanf("%f", &l1);
+
+    printf("escreva o lado2: ");
+    scanf("%f", &l2);
+
+    area = dimensoes_retangulo(l1, l2);
+
+    printf("o resultado e igual a: %.2f", area);
+
+
+    return 0;
+}
+
