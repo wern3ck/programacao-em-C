@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float calcular_metros(float largura, float altura){
+    return largura * altura;
+}
+
+float calcular_quantidade_latas(float metros_quadrados, float cobertura_por_lata){
+    return metros_quadrados / cobertura_por_lata;
+}
+int main()
+{
+    float largura, altura,latas_necessarias, metros_quadrados;
+    float cobertura_por_lata = 3.0;
+
+
+    printf("\na a largura e igual a : ");
+    scanf("%f", &largura);
+
+    printf("\na altura e igual a: ");
+    scanf("%f", &altura);
+
+    metros_quadrados = calcular_metros (largura, altura);
+    latas_necessarias = ceil(calcular_quantidade_latas(metros_quadrados, cobertura_por_lata));
+
+    printf("\na quantidade de latas e igual a %.2f", latas_necessarias);
+    return 0;
+}
