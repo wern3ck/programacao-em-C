@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float ler_prefixo(int num){
+    if(num == 54){
+        printf("\nArgentina");
+    }else if(num == 598){
+        printf("\nUruguai");
+    }else if(num == 595){
+    printf("\nParaguai");
+    }else if(num == 56){
+        printf("\nChile");
+    }else if(num == 49){
+        printf("\nAlemanha");
+    }else if(num == 33){
+        printf("\nFranca");
+    }else if(num == 44){
+        printf("\nInglaterra");
+    }else if(num == 1){
+        printf("\nEUA E CANADA");
+    }else{
+        printf("\noutros paises");
+    }
+   void;
+}
+
+int ler_segundos(float segundos){
+    return segundos / 60;
+}
+int main()
+{
+    float tempo, total;
+    int DDD;
+
+    printf("\nescreva o DDD: ");
+    scanf("%d", &DDD);
+
+    DDD = ler_prefixo(DDD);
+
+    printf("\nescreva o tempo de ligacao: ");
+    scanf("%f", &tempo);
+
+    total = ler_segundos(tempo);
+
+    printf("\na quantidade de minutos e igual a: %.2f\n", total);
+    return 0;
+}
