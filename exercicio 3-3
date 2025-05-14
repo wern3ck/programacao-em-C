@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void verificacao(int num1, int num2){
+    if(num2 == 0){
+    printf("\nErro na divisao", num1, num2);
+   }else if(num1 % num2 == 0){
+    printf("\nE divisivel!", num1, num2);
+   }else{
+       printf("\nERRO!");
+   }
+    return;
+    }
+
+
+
+int main()
+{
+    int numero;
+
+    printf("\nescreva um numero: ");
+    scanf("%d", &numero);
+
+    verificacao(numero, 2);
+    verificacao(numero, 3);
+    verificacao(numero, 5);
+    verificacao(numero, 7);
+
+    return 0;
+}
