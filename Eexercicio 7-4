@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+   int numero;
+
+   printf("\nescreva um numero: ");
+   scanf("%d", &numero);
+
+   switch(numero){
+
+   case 1: printf("\nDomigo");
+   break;
+   case 2: printf("\nSegunda-feira");
+   break;
+   case 3: printf("\nTerca-feira");
+   break;
+   case 4: printf("\nQuarta-feira");
+   break;
+   case 5: printf("\nQuinta-feira");
+   break;
+   case 6: printf("\nSexta-feira");
+   break;
+   case 7: printf("\nSabado");
+   break;
+
+   default: printf("\nDia invalido");
+   }
+    return 0;
+}
