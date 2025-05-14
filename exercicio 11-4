@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float imprimeDivisaoInteira(int num, int divisor, float resultado){
+    if(divisor != 0){
+    resultado = num / divisor;
+    }else{
+        printf("\ndivisao invalida");
+        return 0;
+    }
+}
+
+float imprimeDivisaoReal(int num, int divisor, float resultado){
+     if(divisor != 0){
+    resultado = num / divisor;
+    }else{
+        printf("\ndivisao invalida");
+        return 0;
+    }
+}
+
+
+int main()
+{
+    float n, d, total_inteiro,  total_real, r;
+
+    printf("\nEscreva um numero:  ");
+    scanf("%f", &n);
+
+    printf("\nEscreva um divisor: ");
+    scanf("%f", &d);
+
+    total_inteiro = imprimeDivisaoInteira(n, d, r);
+
+    printf("\nO total da divisao e igual a : %.f", total_inteiro);
+
+    total_real = imprimeDivisaoReal (n, d,r);
+
+    printf("\nO total da divisao e igual a : %.f", total_real);
+
+    return 0;
+}
