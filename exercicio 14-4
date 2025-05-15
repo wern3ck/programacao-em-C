@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float verificacao(float x, float y, float z){
+    if(x < y + z && y < x + z && z < x + y){
+    return 1;
+    }else {
+    printf("\nOs lados sao invalidos");
+    return 0;
+    }
+    return;
+}
+int main()
+{
+    float x, y, z, resultado;
+
+    printf("\nO valor de x: ");
+    scanf("%f", &x);
+
+    printf("\nO valor de y: ");
+    scanf("%f", &y);
+
+    printf("\nO valor de z: ");
+    scanf("%f", &z);
+
+    resultado = verificacao(x, y, z);
+
+    if (resultado == 1) {
+        printf("\nOs lados formam um triangulo.\n");
+    } else {
+        printf("\nOs lados são invalidos para formar um triangulo.\n");
+    }
+
+
+    return 0;
+}
