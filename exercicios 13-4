@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+float calculaPesoIdeal(char sexo, float alt){
+    float peso;
+    if(sexo == 'M' || sexo == 'm'){
+        peso =(72.7 * alt) - 58;
+        printf("\nO peso ideal e: %.2f\n", peso);
+    }else if (sexo == 'F' || sexo == 'f'){
+        peso = (62.1 * alt) - 44.7;
+        printf("\nO peso ideal pra essa mulher e: %f\n", peso);
+    }else{
+    printf("\nCaracter invalido");
+    peso = -1;
+    }
+    return peso;
+}
+int main()
+{
+    char sexo;
+    float altura, peso;
+
+    printf("\nO sexo e igual: ");
+    scanf(" %c", &sexo);
+
+    printf("\nA altura e igual: ");
+    scanf("%f", &altura);
+
+    peso = calculaPesoIdeal(sexo, altura);
+
+    if (peso != -1) {
+        printf("\nPeso ideal calculado: %.2f\n", peso);
+    }
+    return 0;
+}
