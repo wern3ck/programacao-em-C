@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int saoPositivos(float num1, float num2){
+    if(num1 > 0 && num2 > 0){
+        printf("\nAmbos valores sao maiores que 0\n");
+        return 1;
+    }else{
+        printf("\nPelo menos um dos valores nao é maior que 0\n");
+    return 0;
+    }
+}
+int main()
+{
+    float num1, num2, resultado;
+    printf("\nEscreva dois numeros:  ");
+    scanf("%f %f", &num1, &num2);
+
+    resultado = saoPositivos(num1, num2);
+
+    printf("\nO resultado retornado pela funcao e:  %.f\n", resultado);
+
+
+    return 0;
+}
