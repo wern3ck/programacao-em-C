@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int leNumeroPositivo(){
+    int numero;
+
+    printf("\nescreva um numero: ");
+    scanf("%d", &numero);
+
+    if(numero >= 0){
+        printf("\nseu numero e positivon");
+        return 1;
+    }else{
+        printf("\nmais uma chance para digitar um valor\n");
+
+        printf("\nescreva outro valor: ");
+        scanf("%d", &numero);
+
+        if(numero > 0){
+            return numero;
+        }else{
+         printf("Valor invalido novamente. Retornando 0.\n");
+            return 0;
+            }
+}
+}
+int main()
+{
+    int resultado;
+
+    resultado =  leNumeroPositivo();
+
+    printf("\no valor retornado e: %d\n",resultado);
+
+    return 0;
+}
