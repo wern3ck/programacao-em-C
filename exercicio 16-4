@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float classificaCaractere( char operador){
+    float resultado;
+   if(operador == '+' || operador == '-' || operador == '*' || operador == '/' || operador == '%'){
+        printf("\nOperador matematico");
+
+    }else if(operador == '<' || operador == '>'){
+        printf("\nOperador relacional");
+
+    }else if(operador == '!'){
+        printf("\nOperador logico");
+
+    }else if(operador == '&' || operador == '=' || operador == '\"' || operador == '\'' || operador == '(' || operador == ')' ||  operador == '{' || operador == '}'){
+        printf("\nOperador em C++");
+    }else{
+        printf("\ncaracter nao encontrado");
+        }
+}
+int main()
+{
+    float resultado;
+    char operador;
+
+    printf("\nEcreva um operador(+, -, *, /, %, <, >, !, &, =, ’, (, ) {, }): ");
+    scanf(" %c", &operador );
+
+    resultado = classificaCaractere(operador);
+
+    return 0;
+}
