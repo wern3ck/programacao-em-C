@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float classificaNadador(int idade){
+    if(idade >= 5 && idade < 7){
+        printf("\nInfantial A");
+
+    }else if(idade >= 8 && idade <= 10){
+        printf("\nInfantial B");
+
+    }else if(idade >= 11 && idade <= 13){
+        printf("\nJuvenil A");
+
+    }else if(idade >= 14 && idade <= 17){
+        printf("\nJuvenil B");
+
+    }else if(idade >= 18 && idade <= 30){
+        printf("\nAdulto");
+
+    }else if(idade >= 31){
+        printf("\nMaiores de 30");
+    }
+}
+
+int main()
+{
+
+    float idade, resultado;
+
+    printf("\nEscreva um numero da sua idade: ");
+    scanf("%f", &idade);
+
+    resultado = classificaNadador(idade);
+    return 0;
+}
