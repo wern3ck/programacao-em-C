@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+float fomaspagamento(int opcao, float preco){
+    float resultado;
+    if(opcao == 1){
+        resultado = preco - (preco * 20 / 100);
+        printf("\nDesconto de 20%%\n");
+    }else if(opcao == 2 || opcao == 3 || opcao == 4){
+        resultado = preco;
+        printf("\nMesmo preco a vista\n");
+    }else if(opcao == 5){
+        resultado = preco + (preco * 3 / 100);
+        printf("\nJuros com 3%% ao mes\n");
+    }else if(opcao == 6){
+        resultado = preco + (preco * 5 / 100);
+        printf("Juros de 5%% ao mes\n");
+    }else if(opcao < 1 || opcao > 6){
+        printf("\nOpcao invalida\n");
+        return -1;
+    }
+    return resultado;
+}
+
+int main()
+{
+    float resultado, preco;
+    int opcao;
+    printf("\nForma de pagamento:");
+    printf("\nA vista\n");
+    printf("\nCheque para trinta dias\n");
+    printf("\nEm duas vezes\n");
+    printf("\nEm tres vezes\n");
+    printf("\nEm quatro vezes\n");
+    printf("\nA partir de cinco vezes\n");
+
+    printf("\nEntre com sua opcao: ");
+    scanf("%d", &opcao);
+
+    printf("\nEscreva um preco: ");
+    scanf("%f", &preco);
+
+    resultado = fomaspagamento(opcao, preco);
+
+    printf("\nO valor a ser pago e: %.2f", resultado);
+
+
+
+    return 0;
+}
