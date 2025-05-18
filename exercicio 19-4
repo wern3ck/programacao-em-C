@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a = 9, b = 4, c = -2;
+    float r = 3.5, s = 2.0, t = 0.5, resultado;
+
+    printf("\na) a / b = %d\n", a / b);
+    printf("\nb) b + c * a + %d\n", b + c * a);
+    printf("\nc) (a + c) / (2 + b) = %d\n", (a + c) / (2 + b));
+    printf("\nd) a % b - c = %d\n",  a % b - c );
+    printf("\ne) a / s = %.2f\n", a / s);
+    printf("\nf) b * r = %.2f\n", b * r);
+    printf("\ng) a - (c * r) = %.2f\n", a - (c * r));
+    printf("\nh) (t * b) == s = %d\n",(t * b) == s);
+    printf("\ni) (a % b) != 2 = %d\n", (a % b) != 2);
+    printf("\nj) (a < b) || (r > s) = %d\n", (a < b) || (r > s));
+    printf("\nk) (b * t) == s && (a - b) < r = %d\n", (b * t) == s && (a - b) < r);
+    printf("\nl) a <= b * 2 + 1 || (r >= s +t) = %d\n",a <= b * 2 + 1 || (r >= s +t));
+
+
+    return 0;
+}
