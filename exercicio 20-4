@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a;
+
+    printf("\ninforme um valor inteiro: ");
+    scanf("%d", &a);
+
+    if((a % 2 == 0) && (a > 0)){
+    printf("\neh um numero par positivo");
+    }else if ((a % 2 != 0) && (a > 0)){
+        printf("\neh um numero impar positivo");
+    }else if((a % 2 == 0) && (a < 0)){
+        printf("\neh um numero par negativo");
+    }else if((a % 2 != 0) && (a < 0)){
+        printf("\neh um numero impar negativo");
+    }else{
+        printf("\nnumero 0(neutro e par)");
+    }
+
+    return 0;
+}
+
