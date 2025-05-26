@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n, cont;
+    printf("\nEscreva um valor inteiro positivo: ");
+    scanf("%d", &n);
+    cont = 0;
+    while(cont <= n){
+        printf("%d\n", cont);
+        cont++;
+    }
+    return 0;
+}
