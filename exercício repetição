@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float quad, num;
+
+    printf("\nEscreva um numero inteiro: ");
+    scanf("%f", &num);
+
+    while(num != 0){
+            quad = num * num;
+        printf("\nO quadrado de %.2f = %.2f", num, quad);
+        printf("\nDigite um inteiro (0 pra sair): ");
+        scanf("%f",&num);
+
+    }
+    return 0;
+}
