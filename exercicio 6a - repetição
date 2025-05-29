@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float produto(float n, float x){
+    float resultado;
+    if(n >= 0 && x >= 0){
+        resultado = n * x;
+    }else{
+        printf("\nSoma com numeros abaixo de 0");
+        }
+        return resultado;
+    }
+int main()
+{
+    float n, x, r;
+
+    printf("\nEscreva um numero inteiro e real:  ");
+    scanf("%f %f", &n, &x);
+
+    r= produto(n,x);
+
+    printf("\nA soma desses valores e igual a: %.2f", r);
+    return 0;
+}
