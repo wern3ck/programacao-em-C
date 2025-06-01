@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int funcao(int numero, int i){
+
+    if(numero <= 0){
+        printf("\nPrograma esta encerrando");
+        return 0;
+    }
+
+    printf("\nA tabuada do %d", numero);
+
+    while( i <= 10){
+        printf("\n%d x %d = %d", numero, i, numero * i);
+        i++;
+    }
+}
+int main()
+{
+    float resultado;
+    int numero, i;
+
+    printf("\nEscreva um numero:");
+    scanf("%d", &numero);
+
+    resultado = funcao(numero, i);
+
+    return 0;
+}
