@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+
+    int numero;
+    int i;
+
+    printf("\nEscreva um numero:");
+    scanf("%d", &numero);
+
+    printf("\nA tabuada do %d", numero);
+
+    while( i <= 10){
+        printf("\n%d x %d = %d", numero, i, numero * i);
+        i++;
+
+    }
+
+
+    return 0;
+}
