@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+float funcao(float quantidade, float preco){
+    float resultado = 0;
+
+
+    while(quantidade != 0 && preco != 0){
+        resultado = resultado + preco + quantidade  ;
+        printf("\nA soma e igual a: %.2f\n", resultado);
+
+        printf("Escreva o preco do produto: ");
+        scanf("%f", &preco);
+
+        printf("\nEscreva a quantidade de produtos: ");
+        scanf("%f", &quantidade);
+
+    }
+    printf("\nA soma e igual a: %.2f\n", resultado);
+
+    }
+
+
+int main()
+{
+    float quantidade, preco, resultado;
+
+    printf("\nEscreva a quantidade de produtos: ");
+    scanf("%f", &quantidade);
+
+    printf("\nEscreva a preco de produtos: ");
+    scanf("%f", &preco);
+
+
+    resultado =  funcao(quantidade, preco);
+
+    return 0;
+}
