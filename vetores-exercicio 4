@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float vet[10];
+    int i;
+    for(int i = 0; i < 10; i++){
+        printf("\nDigite um numero pra cada vetor[%d]: ", i);
+        scanf("%f", &vet[i]);
+    }
+    printf("\nVetor lido\n");
+
+    for(int i = 0; i < 10; i++){
+        printf("Vetor[%d] = %.2f\n", i, vet[i]);
+    }
+
+
+
+    return 0;
+}
