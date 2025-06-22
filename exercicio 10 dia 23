@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int espacos_brancos(char string[]){
+    int i, contador = 0;
+    for(i = 0; string[i] != '\0'; i++){
+        if(string[i] == ' '){
+            contador ++;
+
+        }
+    }
+    return contador;
+}
+int main()
+{
+    char frase[100];
+    int total;
+
+    printf("\nEscreva uma frase: ");
+    fgets(frase, 100, stdin);
+
+    total = espacos_brancos(frase);
+    printf("\nNumero de espacoes em brancos: %d\n", total);
+    return 0;
+}
